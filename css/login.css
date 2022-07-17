@@ -1,0 +1,73 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    box-shadow:  0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11);
+}
+
+.login__name{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    margin: 20px 0;
+    border: none;
+    border-bottom: 2px solid tomato;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11);
+}
+
+.login__h1{
+    font-size:40px;
+    font-weight: 600;
+}
+
+.login__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    height: 30px;
+    width: 300px;
+    border: 2px solid rgba(50, 50, 93, 0.11);
+    box-shadow:  0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(50, 50, 93, 0.11);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.username{
+    display: flex;
+    justify-content: space-between;
+}
+
+.username button{
+    width: 70px;
+    height: 30px;
+    background-color: none;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: 600;
+}
+
+.login__btn:hover,
+.username button:hover{
+    transform: scale(0.9);
+    background-color: tomato;
+}
+
+.username{
+    margin-bottom: 20px;
+}
+
+.username h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.login input:focus{
+    outline: none;
+}

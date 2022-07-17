@@ -1,0 +1,68 @@
+
+.naver-search,
+.google-search{
+    margin: 20px 0px;
+    display: flex;
+}
+
+.naver-search button,
+.google-search button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.naver-search button img{
+    height: 10px;
+    width: 50px;
+}
+
+.google-search button img{
+    width: 40px;
+    height: 40px;
+}
+
+.naver-search input,
+.google-search input{
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0px 10px;
+    background-color: white;
+}
+
+
+.google-search button:hover,
+.naver-search button:hover{
+    transform: scale(0.9);
+}
+
+.bookmark-name span,
+.search-name span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bookmark-name{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.bookmark{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bookmark a img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.bookmark a img:hover{
+    transform: scale(0.9);
+}

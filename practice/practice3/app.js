@@ -21,3 +21,5 @@ function colorChange(){
 window.addEventListener("resize",colorChange);
 
 console.dir(window.innerWidth);
+
+document.q

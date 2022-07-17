@@ -58,14 +58,15 @@ toDoForm.addEventListener("submit",handleToDoSubmit);
 
 
 const savedTodos = localStorage.getItem(TODO_KEY);
+console.log(savedTodos);
 
 if(savedTodos !== null){
-    const parsedToDos = JSON.parse(savedTodos);
+    const parsedToDos = JSON.parse(savedTodos); //string 을 array로 반환
     toDos= parsedToDos;
     console.log(parsedToDos);
     //parsedToDos.forEach(sayHello);
     //parsedToDos.forEach((item) => console.log("this is the Item",item));  --> sameWay
-    parsedToDos.forEach(paintToDo);
+    parsedToDos.forEach(paintToDo); // 반복문과 같이 자동으로 객체 반복.
 }
 
 //toDOs array에서 요소 값을 지우기 위해서, 랜덤한 id 값을 텍스트에 할당한다. 
@@ -81,5 +82,8 @@ function sexyFilter(item){
 }
 }//반드시 true를 리턴해야 된다. false를 리턴하면, false를 제외한 새로운 array를 만든다.
 
-console.log([1,2,3,4].filter(sexyFilter))
+console.log([1,2,3,4].filter(sexyFilter));
 
+//참고!!
+const arr=[1,2,3,4]
+console.log(arr.filter(item => item>2));
