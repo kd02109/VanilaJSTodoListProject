@@ -28,12 +28,12 @@ function onGeo(position){
             console.log(img);
             weatherBox.appendChild(img);
         }else if(weather === state[2]){
-            const img =weatherBox.createElement("img");
+            const img =document.createElement("img");
             img.classList.add("weather__pic");
             img.src=`icon/${picture[2]}`;
             weatherBox.appendChild(img);
         }else if(weather === state[3]){
-            const img =weatherBox.createElement("img");
+            const img =document.createElement("img");
             img.classList.add("weather__pic");
             img.src=`icon/${picture[0]}`;
             weatherBox.appendChild(img);
