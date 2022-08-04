@@ -17,7 +17,7 @@ function onGeo(position){
         const span2 = document.querySelector(".weather span:nth-child(2)");
         const span4 = document.querySelector(".weather__img span");
         if(weather === state[0]){
-            const img =weatherBox.createElement("img");
+            const img =document.createElement("img");
             img.classList.add("weather__pic");
             img.src=`icon/${picture[3]}`;
             weatherBox.appendChild(img);
