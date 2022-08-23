@@ -1,113 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanila JS.</title>
-    <link rel="stylesheet", href="style.css"/>
-</head>
-<body>
+    <link rel="stylesheet" , href="style.css" />
+  </head>
+  <body>
     <form class="login hidden">
-        <h1 class="login__h1">What's your name?</h1>
-        <input type="text" id="js-name" class="login__name">
-        <button class="login__btn" id="js-login">Log In</button>
+      <h1 class="login__h1">What's your name?</h1>
+      <input type="text" id="js-name" class="login__name" />
+      <button class="login__btn" id="js-login">Log In</button>
     </form>
     <div class="mainbox hidden">
-        <div class="music">
-            <div class="username">
-                <h1></h1>
-                <button>Log Out</button>
-            </div>
-            <div class="music__box">
-                <iframe  src="https://www.youtube.com/embed/SyqyRv6NS_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="music__change">
-                <button class="jazz">
-                    <img src="icon/jazz.png">
-                    <span>JAZZ</span>
-                </button>
-                <button class="pop">
-                    <img src="icon/pop.png">
-                    <span>POP</span>
-                </button>
-                <button class="rapper">
-                    <img src="icon/rapper.png">
-                    <span>RAP</span>
-                </button>
-                <button class="rofi">
-                    <img src="icon/rofi.png">
-                    <span>ROFI</span>
-                </button>
-                <button class="classic">
-                    <img src="icon/classic.png">
-                    <span>CLASSIC</span>
-                </button>
-            </div>
-            <div class="search-name">
-                <span>Search</span>
-            </div>
-            <div class="google-search">
-                <input type="text" id="js-google" placeholder="Google Search">
-                <button>
-                    <img src="icon/google-logo.png">
-                </button>
-            </div>
-            <div class="naver-search">
-                <input type="text" id="js-naver" placeholder="Naver Search">
-                <button>
-                    <img src="icon/naver.png">
-                </button>
-            </div>
-            <div class="bookmark-name">
-                <span>Bookmark</span>
-            </div>
-            <nav class="bookmark">
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img src="icon/youtube.png">
-                </a>
-                <a href="https://nomadcoders.co/" target="_blank">
-                    <img src="https://nomadcoders.co/m.svg">
-                </a>
-                <a href="https://www.netflix.com/kr/" target="_blank">
-                    <img src="icon/netflix.png">
-                </a>
-                <a href="https://developer.mozilla.org/ko/docs/Web" target="_blank">
-                    <img src="icon/mdn.png">
-                </a>
-            </nav>
+      <div class="music">
+        <div class="username">
+          <h1></h1>
+          <button>Log Out</button>
         </div>
-        <div class="todo">
-            <div class="todo-name">
-                <span>Write Today's plans</span>
-                <div class="todo-name__write">
-                    <input type="text" id="js-todo" placeholder="Write plans"/>
-                    <button><i class="fa-solid fa-check"></i></button>
-                </div>
-            </div>
-            <ul class="todo__list"></ul>
-            <div class="quote">
-                <h4></h4>
-                <span></span>
-            </div>
+        <div class="music__box">
+          <iframe
+            src="https://www.youtube.com/embed/SyqyRv6NS_U"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
-        <div class="time-weather">
-            <div class="time">
-                <span class="time__mon">0000. 00. 00. </span>
-                <span class="time__hour">00:00:00</span>
-            </div>
-            <div class="weather">
-                <span class="weather__name"></span>
-                <span></span>
-                <div class="weather__img">
-                    <span></span>
-                </div>
-            </div>
+        <div class="music__change">
+          <button class="jazz">
+            <img src="icon/jazz.png" />
+            <span>JAZZ</span>
+          </button>
+          <button class="pop">
+            <img src="icon/pop.png" />
+            <span>POP</span>
+          </button>
+          <button class="rapper">
+            <img src="icon/rapper.png" />
+            <span>RAP</span>
+          </button>
+          <button class="rofi">
+            <img src="icon/rofi.png" />
+            <span>ROFI</span>
+          </button>
+          <button class="classic">
+            <img src="icon/classic.png" />
+            <span>CLASSIC</span>
+          </button>
         </div>
+        <div class="search-name">
+          <span>Search</span>
+        </div>
+        <div class="google-search">
+          <input type="text" id="js-google" placeholder="Google Search" />
+          <button>
+            <img src="icon/google-logo.png" />
+          </button>
+        </div>
+        <div class="naver-search">
+          <input type="text" id="js-naver" placeholder="Naver Search" />
+          <button>
+            <img src="icon/naver.png" />
+          </button>
+        </div>
+        <div class="bookmark-name">
+          <span>Bookmark</span>
+        </div>
+        <nav class="bookmark">
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="icon/youtube.png" />
+          </a>
+          <a href="https://nomadcoders.co/" target="_blank">
+            <img src="https://nomadcoders.co/m.svg" />
+          </a>
+          <a href="https://www.netflix.com/kr/" target="_blank">
+            <img src="icon/netflix.png" />
+          </a>
+          <a href="https://developer.mozilla.org/ko/docs/Web" target="_blank">
+            <img src="icon/mdn.png" />
+          </a>
+        </nav>
+      </div>
+      <div class="todo">
+        <div class="todo-name">
+          <span>Write Today's plans</span>
+          <form class="todo-name__write">
+            <input type="text" id="js-todo" placeholder="Write plans" />
+          </form>
+        </div>
+        <ul class="todo__list"></ul>
+        <div class="quote">
+          <h4></h4>
+          <span></span>
+        </div>
+      </div>
+      <div class="time-weather">
+        <div class="time">
+          <span class="time__mon">0000. 00. 00. </span>
+          <span class="time__hour">00:00:00</span>
+        </div>
+        <div class="weather">
+          <span class="weather__name"></span>
+          <span></span>
+          <div class="weather__img">
+            <span></span>
+          </div>
+        </div>
+      </div>
     </div>
 
- 
-    <script src="https://kit.fontawesome.com/981361981b.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/981361981b.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/login.js"></script>
     <script src="js/quote.js"></script>
     <script src="js/music.js"></script>
@@ -116,13 +123,13 @@
     <script src="js/time.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/background.js"></script>
-</body>
-<!--<a href="https://www.flaticon.com/free-icons/conductor" title="conductor icons">Conductor icons created by Freepik - Flaticon</a>
+  </body>
+  <!--<a href="https://www.flaticon.com/free-icons/conductor" title="conductor icons">Conductor icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/jazz" title="Jazz icons">Jazz icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/sing" title="sing icons">Sing icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/rap" title="rap icons">Rap icons created by Freepik - Flaticon</a>-->
 
-<!--Iconset: Weather (https://www.iconfinder.com/iconsets/weather-line-19)
+  <!--Iconset: Weather (https://www.iconfinder.com/iconsets/weather-line-19)
 Author: Fatkhul Karim (https://www.iconfinder.com/fatkhulkarim)
 License: Creative Commons (Attribution 3.0 Unported) (http://creativecommons.org/licenses/by/3.0/)
 Download date: 2022-07-17-->
