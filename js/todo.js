@@ -1,7 +1,7 @@
 const todo = document.querySelector(".todo-name__write");
 const todoInput = document.querySelector(".todo-name__write input");
 const todoList = document.querySelector(".todo__list");
-console.log(todo);
+
 let toDos = [];
 const TODO_KEY = "todos";
 
@@ -47,7 +47,7 @@ function deleteTodo(event) {
 
 const localStorageTodo = localStorage.getItem(TODO_KEY);
 
-if (saveTodo !== null) {
+if (localStorageTodo !== null) {
   const arrayTodo = JSON.parse(localStorageTodo);
   arrayTodo.forEach(paintTodo);
 }
